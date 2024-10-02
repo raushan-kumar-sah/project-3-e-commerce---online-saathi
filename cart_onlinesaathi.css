@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+/*.................top..................*/
+#first .first{
+    display: flex;
+    padding: 20px;
+}
+#first .open{
+    background-color: #fff;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    display: none;
+    position: absolute;
+    margin-top: 25px;
+}
+#first .open:hover{
+    background-color: #444444;
+}
+@media (max-width:850px){
+    #first .open{
+        display: block;
+    }
+    #first .first .none{
+        display: none;
+    }
+    #second .electro{
+        display: none;
+    }
+}
+.side{
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+    width: 350px;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transform: translateX(-350px);
+    transition: all linear 0.5s;
+}
+.side.active{
+    transform: translateX(0px);
+}
+.side .close{
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    width: 310px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align-last: left;
+}
+.side .close i{
+    float: right;
+    color: #818181;
+    font-size: 20px;
+}
+.side .close i:hover{
+    color: #F1F1F1;
+}
+.side li{
+    list-style-type: none;
+}
+.side li a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #818181;
+    font-family: Arial;
+    font-size: 18px;
+    transition: all linear 0.3s;
+}
+.side li a i{
+    float: right;
+    color: black;
+}
+.side li a:hover{
+    color: #F37128;
+    font-size: 20px;
+}
+#first .open i{
+    color: black;
+    font-size: 35px;
+}
+#first .first img{
+    width: 150px;
+    height: 50px;
+    margin-right: 80px;
+
+}
+#first .first .search{
+    border:1px solid #888888;
+    width: 500px;
+    height: 40px;
+    padding:  10px 20px 10px 20px;
+    margin-right: 60px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+#first .first .search a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+#first .first > a{
+    margin-left: 55px;
+    color: #444444;
+    text-decoration: none;
+    font-size: 15px;
+}
+#first .first > a:hover{
+    color: #F37128;
+}
+#first .first a i{
+    margin-left: 20px;
+}
+#first .first a i.sell{
+    margin-left: 35px;
+}
+/*................middle.................*/
+#all{
+    background-color: #EAEAEA;
+}
+.categories{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.categories a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #777;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.categories .cate{
+    color: black;
+    margin-right: 70px;
+}
+.categories .cate i{
+    margin-right: 10px;
+}
+.empty{
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.cart{
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.cart .shop i{
+    font-size: 40px;
+    margin-left: 45%;
+    margin-bottom: 40px;
+}
+.cart .shop p{
+    margin-bottom: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+}
+.cart .shop .shopping{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background-color: #F37128;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+.cart .shop .shopping:hover{
+    cursor: pointer;
+}
+/*.......................bottom.....................*/
+/*............................eight part.....................*/
+#eight{
+    background-color: #EBEBEB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#eight .deliver{
+    display: flex;
+}
+#eight .deliver .feature{
+    text-align: center;
+    margin-left: 30px;
+}
+#eight .deliver .feature i{
+    margin-top: 30px;
+    margin-bottom: 10px;    
+}
+#eight .deliver .feature p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+@media (min-width:768px) and (max-width:1199px){
+    #eight .deliver{
+        flex-wrap: wrap;
+    }
+    #eight .deliver .feature{
+        width: 50%;
+    }
+}
+@media (max-width:768px){
+    #eight .deliver{
+        flex-wrap: wrap;
+    }
+    #eight .deliver .feature{
+        width: 100%;
+    }
+}
+/*.........................ninth part.....................*/
+#ninth{
+    background-color: #0694C9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#ninth .last{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#ninth .last .foot p{
+    font-size: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#ninth .last .foot{
+    margin-right: 80px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+#ninth .last .foot ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+@media (min-width:768px) and (max-width:1199px){
+    #ninth .last{
+        flex-wrap: wrap;
+    }
+    #ninth .last .foot{
+        width: 20%;
+    }
+}
+@media (max-width:768px){
+    #ninth .last{
+        flex-wrap: wrap;
+    }
+    #ninth .last .foot{
+        width: 30%;
+    }
+}
+#eleventh{
+    background-color: #0694C9;
+}
+#eleventh .lastone{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+#eleventh .lastone p{
+    margin-bottom: 10px;
+    text-align: center;
+}
